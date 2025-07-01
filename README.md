@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/8641fd6f-c491-463f-b399-9cff4a596c81)# Dashboard Project
+![image](https://github.com/user-attachments/assets/ab779a06-28d8-4b6b-8975-3baedb117541)
+
+# Dashboard Project
 
 A simple and responsive dashboard built with HTML, CSS, and JavaScript.  
 This project demonstrates an admin panel layout with user statistics and charts.
