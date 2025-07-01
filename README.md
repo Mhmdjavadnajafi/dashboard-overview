@@ -2,7 +2,7 @@
 
 A simple and responsive dashboard built with HTML, CSS, and JavaScript.  
 This project demonstrates an admin panel layout with user statistics and charts.
-![image](https://github.com/user-attachments/assets/f9e2b2ca-cba9-459c-a800-7c5909119303)
+
 
 ## Features
 
