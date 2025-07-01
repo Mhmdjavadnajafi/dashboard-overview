@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="nav-toggle">
+            <div class="nav-toggle-img">
+                <img src="./assets/images/icon-logo.png" alt="">
+            </div>
+        </div>
+        <div id="nav-location">
+            <div class="nav-location-left">
+                <div class="nav-location-title">Location</div>
+                <div class="nav-location-name">Overview</div>
+            </div>
+            <div class="nav-location-right">
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="nav-item-text activated" id="overview">
+            <div class="nav-item-text-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="nav-item-text-title">Overview</div>
+        </div>
+        <div class="nav-item-text" id="users">
+            <div class="nav-item-text-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="nav-item-text-title">Users</div>
+        </div>
+        <div class="nav-item-text" id="add-user">
+            <div class="nav-item-text-icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <div class="nav-item-text-title">Add User</div>
+        </div>
+        <div class="nav-item-text" id="manage">
+            <div class="nav-item-text-icon">
+                <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <div class="nav-item-text-title">Manage</div>
+        </div>
+        <div class="nav-item-text" id="settings">
+            <div class="nav-item-text-icon">
+                <i class="fa-solid fa-sliders"></i>
+            </div>
+            <div class="nav-item-text-title">Settings</div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="overview">
+            <div class="cards-overview">
+                <div class="card-overview">
+                    <div class="card-overview-title">Total Users</div>
+                    <div class="card-overview-value">25</div>
+                    <div class="card-overview-description">
+                        <div class="percentage">
+                            <div class="percentage-icon">
+                                <i class="fa-solid fa-arrow-up-long"></i>
+                            </div>
+                            <div class="percentage-number">
+                                12%
+                            </div>
+                        </div>
+                        <div class="percentage-des">
+                            Users in the past month
+                        </div>
+                        <div class="card-overview-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overview">
+                    <div class="card-overview-title">Active Users</div>
+                    <div class="card-overview-value">3</div>
+                    <div class="card-overview-description">
+                        <div class="percentage down">
+                            <div class="percentage-icon">
+                                <i class="fa-solid fa-arrow-down-long"></i>
+                            </div>
+                            <div class="percentage-number">
+                                16%
+                            </div>
+                        </div>
+                        <div class="percentage-des">
+                            Current Activity Level
+                        </div>
+                        <div class="card-overview-icon active">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overview">
+                    <div class="card-overview-title">Inactive Users</div>
+                    <div class="card-overview-value">30%</div>
+                    <div class="card-overview-description">
+                        <div class="percentageBars">
+                            <div class="solid-percentageBars"></div>
+                        </div>
+                        <div class="card-overview-icon inactive">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overview">
+                    <div class="card-overview-title">New Signups</div>
+                    <div class="card-overview-value">3</div>
+                    <div class="card-overview-description">
+                        <div class="card-overview-icon NewSignups">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart-user-data">
+                    <div class="chart-user-data-title">Registration per week</div>  
+                    <canvas id="userChart"></canvas>
+                </div>
+                <div class="chart-social-data">
+                    <div class="chart-social-data-title">
+                        Traffic Source
+                    </div>
+                    <canvas class="circle-chart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="users">
+            <h1>Hello Users!</h1>
+        </div>
+        <div class="add-user">
+            <h1>Hello Add User!</h1>
+        </div>
+        <div class="manage">
+            <h1>Hello Manage!</h1>
+        </div>
+        <div class="settings">
+            <h1>Hello Settings!</h1>
+        </div>
+    </div>
+
+    <script type="module" src="./components/navMenu.js"></script>
+    <script type="module" src="./components/showMenu.js"></script>
+    <script type="module" src="./components/chart.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

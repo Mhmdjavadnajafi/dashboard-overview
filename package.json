@@ -1,0 +1,15 @@
+{
+  "name": "user-dashboard",
+  "version": "1.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "dev": "vite"
+  },
+  "author": "Mohammad Javad Najafi",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.5.0"
+  }
+}
